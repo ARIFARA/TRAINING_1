@@ -1,0 +1,16 @@
+// message formatting options...
+-hF1            // output: a single line
++ffn            // use full path names
+-width(120,4)   // break lines after 99 characters with 4 characters indent
++flm            // make sure no foreign includes change the format
+
+-std=c99        // apply the C99 language standard
+
+-zero(99)       // don't stop because of warnings
+-passes(2)      // make two passes (for better error messages)
+-restore_at_end // don't let -e<nn> options bleed to other files
+-summary()      // output a summary of all produced messages
+
+// globally suppress the following warnings:
+-e546           // explicitly taking address of function
+-e717           // monocarpic do-while used to group statements

@@ -1,0 +1,24 @@
+//============================================================================
+// QP/C Real-Time Embedded Framework (RTEF)
+// Copyright (C) 2005 Quantum Leaps, LLC. All rights reserved.
+//
+// SPDX-License-Identifier: GPL-3.0-or-later
+//
+// Contact information:
+// <www.state-machine.com>
+// <info@state-machine.com>
+
+//============================================================================
+// general options
+-unit_check        // perform only subset check (suppresses Global Wrapup)
+-max_threads=1     // suppress message "no '-max_threads=N' option"
+//-vf              // print names of all source files (for debugging linting)
+
+// language subset standards...
+//au-misra3.lnt       // MISRA-C:2012
+
+// include directories
+-i..
+
+// suppressed messages
+-e838           // previous value assigned to ... not used
